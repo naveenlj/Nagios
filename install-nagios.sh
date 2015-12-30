@@ -139,6 +139,12 @@ service httpd restart
  
  chkconfig nagios on
 
+iptables -I INPUT -m tcp -p tcp --dport 80 -j ACCEPT
+
+service iptables save
+
+clear
+
  curl -i localhost
 
 
