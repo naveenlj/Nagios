@@ -7,7 +7,11 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-#yum install php php-cli gcc glibc glibc-common gd gd-devel net-snmp -y
+# Disable SElinux
+sed -i.bak 's#SELINUX=enforcing#SELINUX=disabled#g' /etc/selinux/config
+setenforce 0
+ 
+ #yum install php php-cli gcc glibc glibc-common gd gd-devel net-snmp -y
 
 which  wget >/dev/null 2>&1
 if  [ $? != 0 ]; then
