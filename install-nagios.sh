@@ -15,56 +15,56 @@ setenforce 0
 
 which  wget >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install wget >/dev/null 2>&1
+  yum -y install wget >/dev/null 2>&1
 fi
 
 which  httpd >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install  httpd >/dev/null 2>&1
+  yum -y install  httpd >/dev/null 2>&1
 fi
 
 which php >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install php >/dev/null 2>&1
+  yum -y install php >/dev/null 2>&1
 fi
 
 which php-cli >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install php-cli >/dev/null 2>&1
+  yum -y install php-cli >/dev/null 2>&1
 fi
 
 which gcc >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install gcc >/dev/null 2>&1
+  yum -y install gcc >/dev/null 2>&1
 fi
 
 which glibc >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install glibc >/dev/null 2>&1
+  yum -y install glibc >/dev/null 2>&1
 fi
 which glibc-common >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install glibc-common >/dev/null 2>&1
+  yum -y install glibc-common >/dev/null 2>&1
 fi
 
 which gd >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install gd >/dev/null 2>&1
+  yum -y install gd >/dev/null 2>&1
 fi
 
 which gd-devel >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install gd-devel >/dev/null 2>&1
+  yum -y install gd-devel >/dev/null 2>&1
 fi
 
 which net-snmp >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install net-snmp >/dev/null 2>&1
+  yum -y install net-snmp >/dev/null 2>&1
 fi
 
 which git >/dev/null 2>&1
 if  [ $? != 0 ]; then
-  yum install git >/dev/null 2>&1
+  yum -y install git >/dev/null 2>&1
 fi
 
 # start httpd 
